@@ -98,7 +98,7 @@ class CityListTest {
     void travisLabTest(){
         CityList cityList = mockCityList();
 
-        City city = new City("Calgary","Alberta");
+        City city = new City("Edmonton","Alberta");
         assertEquals(0,city.compareTo(cityList.getCities().get(0)));
     }
 }
