@@ -80,7 +80,7 @@ class CityListTest {
     void testDeleteException(){
         CityList cityList = mockCityList();
         
-        cityList.delete(mockCity())
+        cityList.delete(mockCity());
 
         assertThrows(IllegalArgumentException.class, () -> {
             cityList.delete(mockCity());
