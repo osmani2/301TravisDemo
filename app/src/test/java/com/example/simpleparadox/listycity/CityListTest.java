@@ -93,4 +93,12 @@ class CityListTest {
         
         assertEquals(1,cityList.getCities().size());
     }
+
+    @Test
+    void travisLabTest(){
+        CityList cityList = mockCityList();
+
+        City city = new City("Calgary","Alberta");
+        assertEquals(0,city.compareTo(cityList.getCities().get(0)));
+    }
 }
